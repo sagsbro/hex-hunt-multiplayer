@@ -20,3 +20,6 @@ Click: pulse attack
 R: reload/reset page
 
 The game uses stylized pulse/hex combat with no graphic effects.
+
+
+FIX: room creation waits for the WebSocket connection before sending the create/join request, so the room code now appears reliably.
