@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HEX HUNT — Multiplayer</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="menu" class="panel">
+  <h1>HEX HUNT</h1><p>Real-time 2–6 player pulse arena</p>
+  <input id="name" maxlength="14" placeholder="Nickname">
+  <div class="row"><button id="create">Create room</button><button id="join">Join room</button></div>
+  <input id="room" maxlength="6" placeholder="Room code (for Join)">
+  <small>Share the room code with your friends. Everyone opens the same URL.</small>
+</div>
+<div id="game" class="hidden">
+  <div class="hud"><span id="roomLabel"></span><span id="round"></span><span id="status"></span></div>
+  <canvas id="c" width="800" height="600"></canvas>
+  <div class="help">WASD / Arrow keys = move • Mouse = aim • Click = pulse • R = respawn/reset</div>
+</div>
+<script src="game.js"></script></body></html>
